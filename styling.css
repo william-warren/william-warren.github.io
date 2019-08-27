@@ -94,6 +94,7 @@ p {
     align-items: center;
     object-fit: initial;
     background-color: hsla(248, 67%, 42%, 1);
+    padding: 1.5rem;
 }
 
 .icon-container {
