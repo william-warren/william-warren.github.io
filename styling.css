@@ -1,0 +1,140 @@
+body {
+    background-color: slateblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 38pt;
+    margin: 0px 0px 16px 0px;
+    color: lightgray;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: lightgray;
+    font-size: 12pt;
+    margin-bottom: 32px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-description {
+    margin-top: 0px;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    height: 18rem;
+}
+
+#content-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+}
+
+/* #content-3 {
+    
+} */
+
+#contact-info {
+    background-color: orchid;
+    padding: 2rem;
+    margin: 1.5rem 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+}
+
+.info-tab {
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(248, 67%, 51%, 1);
+    margin: 1.5rem 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    max-height: 400px;
+}
+
+.info-content {
+    padding: 2rem;
+}
+
+.button {
+    padding: 1rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 13pt;
+    color: white;
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.pic-container {
+    max-width: 360px;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    object-fit: initial;
+    background-color: hsla(248, 67%, 42%, 1);
+}
+
+.icon-container {
+    padding: .5rem;
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 18pt;
+    }
+
+    p {
+        font-size: 11pt;
+    }
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .info-tab {
+        display: flex;
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .pic-container {
+        max-width: 328px;
+        display: flex;
+        justify-content: center;
+        background-color: hsla(248, 67%, 42%, 1);
+        padding: 1.5rem;
+    }
+
+
+}
