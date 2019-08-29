@@ -2,7 +2,7 @@ body {
     background-image: linear-gradient(
         #493657, #be97ce, #778da9, #2e294e
     );
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nova Mono', monospace;
     background-size: 100%;
 }
 
@@ -36,13 +36,18 @@ p {
 
 #title-description {
     margin-top: 0px;
+    margin-bottom: 5.5rem;
 }
 
 #profile-pic {
-    border-radius: 50%;
-    height: 18rem;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    width: 360ps;
+    height: 360px;
     border: 2px solid gray;
-    margin-top: 16px;
+    margin-top: 5.5rem;
 }
 
 #content-1 {
@@ -93,6 +98,7 @@ p {
     font-size: 13pt;
     color: white;
     font-weight: bold;
+    font-family: 'Nova Mono', monospace;
 }
 
 .button:hover {
