@@ -22,8 +22,13 @@ h3 {
 
 p {
     color: lightgray;
-    font-size: 12pt;
+    font-size: 14pt;
     margin-bottom: 32px;
+    font-family: 'Handlee', cursive;
+}
+
+ul {
+    list-style: none;
 }
 
 /* Index page styling */
@@ -40,10 +45,7 @@ p {
 }
 
 #profile-pic {
-    border-top-right-radius: 30%;
-    border-top-left-radius: 30%;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-radius: 100px/50px;
     width: 360ps;
     height: 360px;
     border: 2px solid gray;
@@ -64,11 +66,7 @@ p {
     
 } */
 
-#about-footnote {
-    vertical-align: text-top;
-    text-align: right;
-    font-size: 9pt;
-}
+
 
 #contact-info {
     background-color: #77567A;
@@ -76,6 +74,7 @@ p {
     margin: 1.5rem 1rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
     border-radius: 10px;
+    border: 2px solid gray;
 }
 
 .info-tab {
@@ -84,8 +83,8 @@ p {
     background-color: #7D6B91;
     margin: 1.5rem 1rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
-    max-height: 400px;
     border-radius: 10px;
+    border: 2px solid gray;
 }
 
 .info-content {
@@ -110,7 +109,6 @@ p {
 
 .pic-container {
     max-width: 360px;
-    max-height: 400px;
     display: flex;
     align-items: center;
     object-fit: initial;
