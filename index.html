@@ -9,19 +9,31 @@
     <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b210ac98a6.js"></script>
+    <script>
+        function myFunction() {
+            var copyText = document.getElementById("emailcopy").title;
+            document.addEventListener('copy', function (event) {
+                event.clipboardData.setData('text/plain', copyText);
+                event.preventDefault();
+                document.removeEventListener('copy', handler, true);
+            }, true);
+            document.execCommand('copy');
+            alert("Copied: " + copyText);
+        }
+    </script>
     <title>William Warren</title>
 </head>
 
 <body>
     <section id="intro">
         <div>
-            <img id="profile-pic" src="okay.jpg" alt="Picture of me on a horse, in a barn, with a hat.">
+            <img id="profile-pic" src=" okay.jpg" alt="Picture of me on a horse, in a barn, with a hat.">
         </div>
         <h1>
             William Warren
         </h1>
         <p id="title-description">
-            A student learning to become a full stack developer.
+            Student on the way to becoming a full-stack software developer.
         </p>
     </section>
     <section id="content-1">
@@ -89,7 +101,7 @@
                         <ul>
                             <li>
                                 <P>
-                                    Command Chief ~ Was in charge of directing the enlisted half of the corps.
+                                    Command Chief ~ Charged with directing the enlisted half of the corps.
                                 </P>
                             </li>
                             <!-- <li>
@@ -101,7 +113,7 @@
                             </li>
                             <li> -->
                             <p>
-                                Unarmed Reg Commander ~ Commanded drill team at competitions and directed entire
+                                Unarmed Regulation Commander ~ Commanded drill team at competitions and directed entire
                                 practice routine after school.
                             </p>
                     </li>
@@ -154,13 +166,11 @@
     <section id="content-3">
         <div id="contact-info">
             <h2>Contact Information</h2>
-            <p>If you have any questions and/or would like to discuss anything in particular, feel free to contact me
-                with
-                any of the following methods.</p>
             <h3>Location</h3>
-            <p>North Mississippi Area</p>
+            <p>Oxford, Mississippi</p>
             <h3>Email</h3>
-            <p>william.warren1019@yahoo.com</p>
+            <button onclick="myFunction()" title="william.warren1019@yahoo.com" id="emailcopy"
+                class="button-email">william.warren1019@yahoo.com</button>
             <h3>Social Media</h3>
             <div id="social">
                 <div class="icon-container">
