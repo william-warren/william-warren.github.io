@@ -57,6 +57,26 @@ ul {
     flex-direction: column;
 }
 
+#content-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-color: #7D6B91;
+    padding: 2rem;
+    max-width: 100%;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2.5rem;
+    grid-column-gap: 2.5rem;
+    max-width: 100%;
+}
+
 #social {
     display: flex;
     flex-direction: row;
@@ -89,6 +109,79 @@ ul {
 
 .info-content {
     padding: 2rem;
+}
+
+.project {
+    max-width: 25rem;
+    height: 12.5rem;
+    display: flex;
+    background-color: #2e294e;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+.yeehaw {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-image: url(https://screenshot.codepen.io/3491208.BaBZqrr.07c67094-0791-43f6-b8b1-05635bb9cbe4.png);
+    background-size: 325%;
+    background-position-x: 1.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.yee {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-image: url(https://screenshot.codepen.io/3491208.LYPLNbN.64251829-10a6-4c3b-902a-b1cf7d331b61.png);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: 240%;
+    background-position-x: 0rem;
+    background-position-y: 1rem;
+
+}
+
+.tothe {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-image: url(sales_site_screenshot.png); 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.haw {
+    background-image: url(https://screenshot.codepen.io/3491208.LYPNgOw.b104f884-6d36-4688-ba6f-29c775e82a3e.png);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: 240%;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+
+.project-content {
+    width: 50%;
+    height: 100%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .button {
@@ -136,7 +229,7 @@ ul {
 
 @media screen and (max-width: 414px) {
     body {
-        width: 100%;
+        width: 100vw;
         margin: 0;
     }
     
@@ -154,6 +247,17 @@ ul {
         align-items: center;
         text-align: center;
         margin: 7rem 1rem 6rem 1rem;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #projects > a {
+        margin: .5rem 0rem;
     }
 
     .info-tab {
