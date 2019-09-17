@@ -132,6 +132,7 @@ ul {
     background-position-x: 1.5rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    background-position-y: .25rem;
 }
 
 .yee {
