@@ -10,18 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b210ac98a6.js"></script>
     <script src="index.js" defer></script>
-    <script>
-        function myFunction() {
-            var copyText = document.querySelector(".button-email").title;
-            document.addEventListener('copy', function (event) {
-                event.clipboardData.setData('text/plain', copyText);
-                event.preventDefault();
-                document.removeEventListener('copy', handler, true);
-            }, true);
-            document.execCommand('copy');
-            alert("Copied: " + copyText);
-        }
-    </script>
     <title>William Warren</title>
 </head>
 
@@ -210,7 +198,7 @@
             <h3>Location</h3>
             <p>Oxford, Mississippi</p>
             <h3>Email</h3>
-            <button onclick="myFunction()" title="william.warren1019@yahoo.com" class="button-email">
+            <button onclick="CopyEmail()" title="william.warren1019@yahoo.com" class="button-email">
                 william.warren1019@yahoo.com
             </button>
             <h3>Social Media</h3>
