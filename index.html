@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b210ac98a6.js"></script>
+    <script src="index.js" defer></script>
     <script>
         function myFunction() {
-            var copyText = document.getElementById("emailcopy").title;
+            var copyText = document.querySelector(".button-email").title;
             document.addEventListener('copy', function (event) {
                 event.clipboardData.setData('text/plain', copyText);
                 event.preventDefault();
@@ -25,20 +26,20 @@
 </head>
 
 <body>
-    <section id="intro">
+    <section class="intro">
         <div>
-            <img id="profile-pic" src="okay.jpg"
+            <img class="intro-profile-pic" src="okay.jpg"
                 alt="Picture of me on a horse, in a barn, with a hat, and not looking at the camera.">
         </div>
         <h1>
             William Warren
         </h1>
-        <p id="title-description">
+        <p class="intro-title-description">
             Student on the way to becoming a full-stack software developer.
         </p>
     </section>
-    <section id="content-1">
-        <section class="info-tab">
+    <section class="content-1">
+        <div class="info-tab">
             <div class="pic-container">
                 <img src="img(totally).jpg" alt="Picture of me. (snickers in dot.txt)" class="info-pic">
             </div>
@@ -52,12 +53,11 @@
                 </p>
                 <p>
                     Outside of the classroom, most of my time is spent refining my skills in software
-                    development, or I’m either playing MTG with some friends, and if neither of those, working;
-                    currently as a host at a small Japanese restaurant in my hometown.
+                    development, or I’m either playing MTG with some friends.
                 </p>
             </div>
-        </section>
-        <section class="info-tab">
+        </div>
+        <div class="info-tab">
             <div class="pic-container">
                 <img src="https://basecampcodingacademy.org/images/header-logo.png" alt="Base Camp Logo"
                     class="info-pic">
@@ -67,7 +67,7 @@
                     Education
                 </h2>
                 <p>
-                    Currently enrolled in an eleven month program known as Basecamp Coding Academy training to become a
+                    Currently enrolled in Basecamp Coding Academy, training to become a
                     full-stack developer.
                 </p>
                 <p>
@@ -79,8 +79,8 @@
                     </button>
                 </a>
             </div>
-        </section>
-        <section class="info-tab">
+        </div>
+        <div class="info-tab">
             <div class="pic-container">
                 <img src="exp.jpeg" alt="Experience Bottle" class="info-pic">
             </div>
@@ -100,13 +100,6 @@
                                     Command Chief ~ Charged with directing the enlisted half of the corps.
                                 </P>
                             </li>
-                            <!-- <li>
-                                <p>
-                                    Armed Ex Alt Commander ~ Command the team if primary commander was absent, and
-                                    oversee
-                                    training of all secondary teams.
-                                </p>
-                            </li> -->
                             <li>
                                 <p>
                                     Unarmed Regulation Commander ~ Commanded drill team at competitions and directed
@@ -114,109 +107,114 @@
                                     practice routine after school.
                                 </p>
                             </li>
-                            <!-- <li>
-                                <p>
-                                    Football Colorguard ~ Sophmore and Junior year commanded 80% of all home game
-                                    colorguard details.
-                                </p>
-                            </li> -->
                         </ul>
                     </li>
-                    <!-- <li>
-                        <p>
-                            Customer Service: Majority of work experience comes from the resturaunt industry, starting
-                            as a bus boy, until moving up to some type of cook in every establishment, one of which I
-                            become a sushi chef.
-                        </p>
-                    </li> -->
                 </ul>
-
-                <!-- <p>
-                    My first job I ever got was that of a bus-boy at a Japanese restaurant. Where, within
-                    less
-                    than a year, I became a full time sushi chef working sixty hours a week while still attending
-                    high-school.
-                </p>
-                <p>
-                    My second job was that of a construction worker for a roofing company. This employment
-                    ended
-                    relatively quick due to physical injuries sustained prior to employment. (I thought I
-                    could
-                    handle it, my body said otherwise)
-                </p>
-                <p>
-                    My third and most recent job is yet again at another restaurant as a bus-boy, although
-                    this
-                    time I made it into the kitchen, as a griller, in less than six months.
-                </p> -->
             </div>
-        </section>
+        </div>
     </section>
-    <section id="content-2">
+    <section class="content-2">
         <h2>
             Projects Completed
         </h2>
-        <div id="projects">
-            <a href="https://codepen.io/william-warren/pen/BaBZqrr">
-                <div class="project">
-                    <div class="yeehaw">
-
-                    </div>
-                    <div class="project-content">
-                        <p>
-                            Duplicate of a skill card from the coursera website.
-                        </p>
-                    </div>
+        <div class="accordion">
+            <div class="accordion-category">
+                <div class="accordion-category-header">
+                    <h3 class="accordion-category-header-arrow arrow-down">
+                        >
+                    </h3>
+                    <h3>
+                        HTML & CSS
+                    </h3>
                 </div>
-            </a>
-            <a href="https://codepen.io/william-warren/pen/LYPLNbN">
-                <div class="project">
-                    <div class="yee">
+                <div class="accordion-category-entries">
+                    <a href="https://codepen.io/william-warren/pen/BaBZqrr">
+                        <div class="project">
+                            <div class="project-image coursera">
 
-                    </div>
-                    <div class="project-content">
-                        <p>
-                            Duplicate of popular tags from the dev.to website.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://william-warren.github.io/sales_site/">
-                <div class="project">
-                    <div class="tothe">
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    Duplicate of a skill card from the coursera website.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://william-warren.github.io/sales_site/">
+                        <div class="project">
+                            <div class="project-image sales-site">
 
-                    </div>
-                    <div class="project-content">
-                        <p>
-                            HTML Benchmark project for BCCA. A static sales site.
-                        </p>
-                    </div>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    HTML Benchmark project for BCCA. A static sales site.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="https://codepen.io/william-warren/pen/LYPNgOw">
-                <div class="project">
-                    <div class="haw">
+            </div>
+            <div class="accordion-category">
+                <div class="accordion-category-header">
+                    <h3 class="accordion-category-header-arrow">
+                        >
+                    </h3>
+                    <h3>
+                        Python
+                    </h3>
+                </div>
+                <div class="accordion-category-entries">
+                    <a href="https://github.com/william-warren/dog_spa/blob/master/app.py">
+                        <div class="project">
+                            <div class="project-image dog-spa">
 
-                    </div>
-                    <div class="project-content">
-                        <p>
-                            Web design project for free code camp.
-                        </p>
-                    </div>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    BCCA's Dog Spa Benchmark
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
+            <div class="accordion-category">
+                <div class="accordion-category-header">
+                    <h3 class="accordion-category-header-arrow">
+                        >
+                    </h3>
+                    <h3>
+                        Javascript
+                    </h3>
+                </div>
+                <div class="accordion-category-entries">
+                    <a href="https://github.com/william-warren/Autocomplete/blob/master/static/autocomplete.js">
+                        <div class="project">
+                            <div class="project-image autocomplete">
+
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    Autocomplete From Api Assignment
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="content-3">
-        <div id="contact-info">
+    <section class="content-3">
+        <div class="contact-info">
             <h2>Contact Information</h2>
             <h3>Location</h3>
             <p>Oxford, Mississippi</p>
             <h3>Email</h3>
-            <button onclick="myFunction()" title="william.warren1019@yahoo.com" id="emailcopy"
-                class="button-email">william.warren1019@yahoo.com</button>
+            <button onclick="myFunction()" title="william.warren1019@yahoo.com" class="button-email">
+                william.warren1019@yahoo.com
+            </button>
             <h3>Social Media</h3>
-            <div id="social">
+            <div class="social">
                 <div class="icon-container">
                     <a href="https://www.linkedin.com/in/will-i-am-warren/"><i class="fab fa-linkedin-in"
                             style="color: lightgray; font-size: 16pt"></i></a>
