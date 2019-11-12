@@ -57,7 +57,7 @@ ul {
     flex-direction: column;
 }
 
-.content-2 {
+.project-accordion-container {
     display: flex;
     flex-direction: column;
     margin: 1.5rem 1rem;
