@@ -77,7 +77,7 @@ ul {
     max-width: 100%;
 }
 
-.accordion {
+/* .accordion {
     height: auto;
     width: 100%;
     display: flex;
@@ -135,7 +135,7 @@ ul {
 
 .accordion-category-entries:not(:last-of-type) {
     border-bottom: 1px solid black;
-}
+} */
 
 .social {
     display: flex;
@@ -322,10 +322,17 @@ a {
         padding: 1.5rem;
     }
 
-    .accordion-category-entries {
+    /* .accordion-category-entries {
         display: flex;
         flex-direction: column;
         width: 80%;
+    } */
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .project {
