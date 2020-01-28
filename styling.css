@@ -339,3 +339,28 @@ button:hover {
         margin-top: 1.5rem;
     }
 }
+
+.por {
+    border: 2px solid gray;
+    padding: .5rem;
+}
+
+.red {
+    color: red;
+}
+
+.up {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+.down {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+}
+
+.pic-container {
+    position: relative;
+}
